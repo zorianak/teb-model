@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>TeB Model - Chex vs. Serenity vs. Hurricane Strike</title>
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+</head>
+
+<body>
+    
+    <div id="wrapper">
+        <h1>TeB Generation Calculation</h1>
+        <p>So, here's a quick tool to add in the duration of a fight to determine which level 100 talent might win out. This is pretty rough, at the moment only outputs Serenity since that's super easy to model. Also, keep in mind that this is considering 0 mastery, which skews results completely.</p>
+        <div id="fightLength">
+            <label for="time">Length of Fight (minutes):</label>
+            <input type="number" id="time" value="6" />
+        </div>
+        <div class="output">
+            <p>TeB Generated via Serenity: <span id="serenityOutput"></span></p>
+        </div>
+    </div>
+    <script language="javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    <script language="javascript" src="js/serenity.js"></script>
+    <script language="javascript" src="js/global.js"></script>
+</body>
+</html>

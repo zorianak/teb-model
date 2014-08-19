@@ -49,5 +49,12 @@ function serenityGeneration(fightLength) {
     // So, while your console will say something like 5.25 Chi
     // generated, keep in mind that this will probably be more like doubled.
     
-    return generateTeb;
+    var sereneOutputUse = $('#serenityOutputUse');
+    var sereneOutputTime = $('#serenityOutputTime');
+    
+    sereneOutputUse.text(generateTeb);
+    
+    // by the way, this is a Fencepost problem, so we DO have to add in
+    // an extra usage of Serenity.
+    sereneOutputTime.text((generateTeb * usage) + generateTeb);
 }
